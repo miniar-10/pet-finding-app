@@ -1,0 +1,27 @@
+{
+    "data": [
+      {
+        "question": "What kind of pets do you want to adopt ?",
+        "choices": ["Cats", "Dogs", "Rabits", "I don't have pereferences"]
+      
+      },
+      {
+        "question": "I am looking to adopt for ",
+        "choices": ["Myself", "My family", "Someone else"]
+      
+      },
+      {
+        "question": "My ideal pet age is",
+        "choices": ["Baby", "Young", "Adult", "I don't have preferences"]
+       
+      },
+      {   "question": "My ideal pet gender is",
+        "choices": ["Male", "Female", "I don't have preferences"]
+       
+      },
+      {
+        "question": "Are you open to adopt a pet with special needs ?",
+        "choices": ["Yes", "No"]
+      }
+    ]
+  } 

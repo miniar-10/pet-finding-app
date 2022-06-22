@@ -69,7 +69,9 @@
 
   }
  .card button:hover{
-    opacity:0.7;
+    background-color: #db7b48;
+
+    /* opacity:0.7; */
 }
 *{
     transition: .5s;

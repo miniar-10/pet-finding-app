@@ -1,0 +1,29 @@
+.about{
+    margin-top: 40px;
+    min-width: 80vh;
+    
+}
+.about-board{
+    display: flex;
+    flex-direction:row ;
+    margin-left: 70px;
+
+}
+.about-div-image{
+    width: 30vw;
+    height: 500px;
+    background-image: url('./stories/assets/abt-us.jpg');
+    background-size: contain;
+    top:-35px;
+}
+.about-div-text{
+    width: 50vw;
+    margin :20px ;
+    text-align: left;
+
+}
+/* about-div-image */
+h1{
+    color: #17122d;
+    margin-bottom: 10px;
+}

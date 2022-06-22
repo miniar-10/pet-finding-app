@@ -1,7 +1,7 @@
 .Home{
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    /* height: 85vh; */
     width: 100vw;;
 
 }
@@ -55,7 +55,9 @@ button{
     
   }
   button:hover{
-    opacity:0.7;
+    background-color: #db7b48;
+
+    /* opacity:0.7; */
   }
   .landing{
     height: 85vh;  
@@ -111,4 +113,20 @@ button{
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+.btn-search:hover{
+  opacity:.85
+
+}
+.social-media img{
+  height: 25px;
+  width: 25px;
+  margin :15px 15px 0 ;
+}
+
+.social-media img:hover{
+  transform: scale(1.2);
+}
+.copy-rights{
+  margin-top:15px;
 }

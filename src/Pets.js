@@ -3,6 +3,7 @@ import Card from './Card';
 import React,{useEffect, useState} from 'react';
 import { Client } from "@petfinder/petfinder-js";
 
+
 import './Pets.css'
 
 export default function Pets(){
@@ -117,12 +118,14 @@ export default function Pets(){
 
         <div className='board'>
             {pets.map((item)=>{
-
+                const key=item.id;
                 // console.log(item.name);
     // console.log(item.gender)
 
                 if(getPetImage(item)!=null){
+                   // console.log(item.species)
                 return( <Card
+                    key={item.id}
                     age={item.age}
                     img={getPetImage(item)}
                     name={item.name}

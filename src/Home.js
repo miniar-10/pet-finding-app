@@ -1,5 +1,8 @@
 import Pets from './Pets'
+
+
 import  './Home.css'
+import About from './About';
 
 function SearchBar  () {
     return(
@@ -13,7 +16,7 @@ function SearchBar  () {
             placeholder="Search blog posts"
             name="s" 
         />
-        <button type="submit">Search</button>
+        <button className='btn-search' type="submit">Search</button>
     </form>
 );
 }
@@ -24,14 +27,17 @@ function Landing(){
                 <SearchBar/>
             </div>
             <Pets/>
+            
         </div>
     );
 }
+
 
 export default function HomePage(){
     return(
         <div className='Home'>
             <Landing/>
+            <About/>
         </div>
     );
 };

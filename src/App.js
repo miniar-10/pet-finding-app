@@ -5,6 +5,12 @@ import Pets from './Pets';
 import './App.css';
 import AddPet from './AddPets';
 import logo from './stories/assets/logo.png'
+import facebook from './stories/assets/facebook-icon.png'
+import twitter from './stories/assets/linkedin-icon.png'
+import linkedin from './stories/assets/twitter-icon.png'
+import About from './About';
+import QuizStart from './QuizStart';
+import Question from './Question';
 
 /*
 To get a token from Petfinder api:
@@ -21,7 +27,7 @@ function Navbar(){
             <li ><Link to="/">Home</Link ></li>
             <li><Link to="/pets">Pets</Link></li>
             <li><Link to="/addPet">Add pet</Link></li>
-            <li><a href="about">About</a></li>
+            <li><Link to="/about">About </Link></li>
           </ul>
           <div>
             <button>Login</button>
@@ -32,16 +38,38 @@ function Navbar(){
           <Route exact path='/' element={<HomePage/>}></Route>
           <Route exact path='/pets' element={<Pets/>}></Route>
           <Route exact path='/addPet' element={<AddPet/>}></Route>
+          <Route exact path='/about' element={<About/>}></Route>
+          <Route exact path='/question' element={<Question/>}></Route>
+
+
         </Routes>
+
       </div>
     </BrowserRouter>
   );
 }
 
+function Footer(){
+  return(
+    <div className='footer'>
+          <div className='social-media'>
+              <img src={facebook} alt='facebook'/>
+              <img src={linkedin} alt='linkedin'/>
+              <img src={twitter} alt='twitter'/>
+
+          </div>
+          <p className='copy-rights'>&copy; PetLovers all rights reserved </p>
+    </div>
+  );
+}
+
+
 function App() {
   return (  
     <div className="App">
       <Navbar/>
+      <Footer/>
+
     </div>
   );
 }

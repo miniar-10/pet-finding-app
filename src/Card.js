@@ -1,23 +1,9 @@
 import React,{useState} from 'react';
-import Popup from 'reactjs-popup';
-import Details from './Details';
-
+import Btn from './Btn.js';
 import './Card.css'
-// import { Button } from '@material-ui/core';
 
 
 
-
-function Btn(props){
-    return(
-        <Popup  trigger={<button className="card-btn">{props.text}</button>} position="right center">
-                <Details
-                item={props.item}
-                img={props.img}
-                />
-        </Popup>
-    )
-}
 export default function Card(props){
     
     // console.log(`localhost:7000/${props.img}`)
@@ -25,8 +11,8 @@ export default function Card(props){
         <div className='card'>
             <img src={props.img}alt={props.name}/>
            <div className='info'>
-                <h3 >
-                    Name : {props.name}
+                <h3 className='info-text'>
+                    {props.name}
                 </h3>
                 <h3 >
                     Age : {props.age}
@@ -49,7 +35,6 @@ export default function Card(props){
              <Btn
             item={props.item}
             img={props.img}
-
             image={props.image}
             text="Adopt"
             className="btn-adopt"
