@@ -18,7 +18,7 @@ const QuizStart = ({item ,img }) => {
 
           <h1>Considering {item.name} for adoption?</h1>
           <p>You have to fill a quiz in order to know how you and {item.name} match each other </p>
-          <button className="card-btn" onClick={()=>{setStartQuiz(true);}} >Start the quiz</button>
+          <button className="card-btn details-btn" onClick={()=>{setStartQuiz(true);}} >Start the quiz</button>
       </div>
     
       }

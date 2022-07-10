@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import phone from './stories/assets/phone-icon.png'
 import mail from './stories/assets/mail-icon.png'
+import seeMoreIcon from './stories/assets/more.png'
+import seeLessIcon from './stories/assets/less.png'
+
 import './Details.css'
 
 function Attributes(props){
@@ -40,29 +43,58 @@ function Contact(props){
     }
 export default  function Details(props){
     // console.log(props.item.attributes)
-return(
-        <div className="details-pop-up">
-            <div className="properties">
+    const[seeMore, setSeeMore]=useState(false);
+if(!seeMore)
+return( 
+   
+        <div className="details-pop-up first">
+            {/* <div className="properties"> */}
+            <img src={seeLessIcon} className="see-less see"
+                    alt='see less'></img>
                 <div className="txt-properties">
-                    <h2>{props.item.name}</h2>
-                    <h4 className="h4">Age : {props.item.age}</h4>
-                    <h4 className="h4">Gender : {props.item.gender}</h4>
-                    <h4 className="h4">Status : {props.item.status}</h4>
-                    <Attributes
-                        item ={props.item.attributes}
+                    <img className="details-image" src={props.img} alt={props.item.name}></img> 
+
+                    <h2 className="details-pet-name dtls">{props.item.name}</h2>
+                    <h4 className="h4 dtls">Age : {props.item.age}</h4>
+                    <h4 className="h4 dtls">Gender : {props.item.gender}</h4>
+                    <h4 className="h4 dtls">Status : {props.item.status}</h4>
+                  
+                {/* </div>   */}
+                    {/* <Contact
+                        image={phone}
+                        text={props.item.contact.phone}
                     />
-                </div>  
-                <Contact
-                    image={phone}
-                    text={props.item.contact.phone}
-                />
-                <Contact
-                    image={mail}
-                    text={props.item.contact.email}
-                />  
-                <button>Adopt</button>
-            </div>
-            <img className="details-image" src={props.img} alt={props.item.name}></img> 
+                    <Contact
+                        image={mail}
+                        text={props.item.contact.email}
+                    />   */}
+                </div>
+                <img src={seeMoreIcon} className="see-more see"
+                    onClick={()=>{setSeeMore(true)}} alt='see more'></img>
+            {/* <button>Adopt</button> */}
+
         </div>
 )
+else return(
+    <div className="details-pop-up second">
+        <img src={seeLessIcon} className="see-less see"
+                    onClick={()=>{setSeeMore(false)}} alt='see less'></img>
+        <div className="txt-properties">
+            <Attributes
+                        item ={props.item.attributes}
+            /> 
+            <Contact
+                    image={phone}
+                    text={props.item.contact.phone}
+            />
+            <Contact
+                image={mail}
+                text={props.item.contact.email}
+            />  
+            <button className="card-btn details-btn">Adopt</button>
+        </div>
+        <img src={seeMoreIcon} className="see-more see" alt='see more'></img>
+    </div>
+    
+);
 }

@@ -15,7 +15,7 @@ export default function Btn(props){
         <div>
             <button className='card-btn' onClick={handleOpen}>{props.text}</button>
             {props.className==="btn-details"&&
-            <Modal
+            <Modal className="my-modal"
               open={open}
               onClose={handleClose}
               aria-labelledby="modal-modal-title"

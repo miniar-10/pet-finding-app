@@ -7,7 +7,8 @@
     top:10px
     ;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: -5px;
+    /* font-size: 14px; */
 
 }
 
@@ -15,9 +16,9 @@
     background:url('C:/Users/miniar/Desktop/reactJs/pet-finder/src/stories/assets/formbckgd.jpg');
     background-size:cover ;
     color: #efdccb; 
-    color: #17122d;
+    /* color: #827376; */
 
-    height: 125vh;
+    height: 130vh;
 }
 .add-pet-form{
     background-color: transparent!important;
@@ -55,22 +56,28 @@
     margin-left: 20px;
     text-align: left;
     display: inline-block;
+    font-size: 18px;
     /* overflow: hidden; */
     white-space: nowrap;
-    
 
+}
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root
+{
+    color: #efdccb !important;
+    margin-left: 20px;
 }
 form h3{
     justify-self: center;
     /* padding-left:40vh; */
     /* margin :30px; */
 }
-h1,h4{
+h1{
     text-align: center;
+
 }
 .submit-btn{
     background-color: #efdccb;
-    color: #17122d;
+    color: #827376;
     height: 40px;
     width: 100px;
     /* background-color: transparent; */
@@ -80,10 +87,22 @@ h1,h4{
     margin-top: 10vh;
 }
 .form-description{
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10vh;
     margin-top: 0;
+    color:#000;
+
+    /* color:#002A4E; */
+    /* width: 50vw; */
+    color: #827376;
+    color:rgb(36, 36, 36);
+    font-weight: 600;
+
+    text-align: center;
+    /* margin-left:25vw; */
+    /* color:#efdccb */
 }
+
 .form-title{
     font-size: 50px;
     margin-bottom: 0;
@@ -122,13 +141,13 @@ h1,h4{
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 92vh;
+    height: 95vh;
     background: transparent;
     justify-content: center;
 }
 .add-pet-form-container button{
-    margin-top: 20px;;
+    margin-top: 3rem;;
 }
-.abt-you input {
- height: 40px;   
+.abt-you .form-group {
+ margin-bottom: 3em;   
 }

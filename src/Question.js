@@ -48,9 +48,9 @@ export default function Question(props){
                 return(<FormControlLabel value={item} control={
                   <Radio
                   sx={{
-                    color: '#17122d',
+                    color: '#827376',
                     '&.Mui-checked': {
-                      color: '#17122d',
+                      color: '#827376',
                     }}}
                   
                   />} label={item} />);
@@ -58,7 +58,7 @@ export default function Question(props){
             }
             </RadioGroup>
           </FormControl>
-          <button className="card-btn" onClick={()=>{
+          <button className="card-btn question-btn" onClick={()=>{
             if(value!==''){
               console.log(value);
 

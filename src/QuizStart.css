@@ -4,7 +4,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 align-items: center;
-background-color: #efdccb;;
+background-color: #fff;
 /* background-color: #fff; */
 z-index: 1000;
 position:absolute;
@@ -18,8 +18,9 @@ left: 50%;
 transform: translate(-50%, -50%);
 width: 500px;
 height: 300px;
-padding :40px
-}
+padding :40px;
+border-radius: 8px
+;}
 
 .css-u4tvz2-MuiFormLabel-root {
     margin-bottom :30px !important;
@@ -50,5 +51,16 @@ padding :40px
 .info-text{
     width: 80%;
     text-overflow: ellipsis;
+
+}
+.question{
+    /* background-color: #d9d3d6; */
+    background-color: rgb(249 240 249 / 89%);
+
+}
+.question-btn:hover{
+background-color:rgba(96, 61, 96, 0.885);
+/* border:2px solid rgb(26, 113, 113); */
+
 
 }

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React,{useState, useEffect}  from 'react';
 import {BrowserRouter  ,Routes ,Route,Link}from 'react-router-dom'
 import HomePage from './Home'
 import Pets from './Pets';
@@ -11,6 +11,7 @@ import linkedin from './stories/assets/twitter-icon.png'
 import About from './About';
 import QuizStart from './QuizStart';
 import Question from './Question';
+import Footer from './Footer';
 
 /*
 To get a token from Petfinder api:
@@ -18,20 +19,24 @@ To get a token from Petfinder api:
 */
 
 function Navbar(){
+  const [Mobile,setMobile]=useState(false);
     return(
       <BrowserRouter>
         <div className='my-app'>
           <nav className="nav-bar">
           <img src={logo} alt="logo"></img>
-          <ul>
+          <ul className={Mobile?'list-for-mobile':'list-for-web'}onClick={()=>setMobile(false)}>
             <li ><Link to="/">Home</Link ></li>
             <li><Link to="/pets">Pets</Link></li>
             <li><Link to="/addPet">Add pet</Link></li>
             <li><Link to="/about">About </Link></li>
           </ul>
+          <button className='toggle-btn' onClick={()=>setMobile(!Mobile)}>
+                    {Mobile?<i class="fa fa-times" aria-hidden="true"></i>:<i class="fa fa-bars" aria-hidden="true"></i>}
+          </button>
           <div>
-            <button>Login</button>
-            <button>Sign in</button>
+            <button className='log login-btn'>Login</button>
+            <button className='log'>Sign in</button>
           </div>
         </nav>
         <Routes>
@@ -49,19 +54,19 @@ function Navbar(){
   );
 }
 
-function Footer(){
-  return(
-    <div className='footer'>
-          <div className='social-media'>
-              <img src={facebook} alt='facebook'/>
-              <img src={linkedin} alt='linkedin'/>
-              <img src={twitter} alt='twitter'/>
+// function Footer(){
+//   return(
+//     <div className='footer'>
+//           <div className='social-media'>
+//               <img src={facebook} alt='facebook'/>
+//               <img src={linkedin} alt='linkedin'/>
+//               <img src={twitter} alt='twitter'/>
 
-          </div>
-          <p className='copy-rights'>&copy; PetLovers all rights reserved </p>
-    </div>
-  );
-}
+//           </div>
+//           <p className='copy-rights'>&copy; PetLovers all rights reserved </p>
+//     </div>
+//   );
+// }
 
 
 function App() {

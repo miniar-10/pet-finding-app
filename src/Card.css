@@ -3,7 +3,7 @@
     height: 450px;
     /* background-color: aliceblue; */
     border-radius: 8px;
-    box-shadow: 10px 10px 5px rgb(190, 190, 190);
+    box-shadow: 8px 8px 5px rgb(210, 227, 232);
 
 }
 .card img{
@@ -64,15 +64,22 @@
     background-color: transparent;
     color: #efdccb;
     border-radius: 6px;
-    border:2px solid #efdccb;
-    background-color:#17122d;
+    border:2px solid #827376;
+
+    background-color:#827376;
 
   }
  .card button:hover{
-    background-color: #db7b48;
+   opacity: .8;
+
+
 
     /* opacity:0.7; */
 }
 *{
     transition: .5s;
+}
+.details-btn{
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
