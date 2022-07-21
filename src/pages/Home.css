@@ -57,7 +57,7 @@ button{
   }
   .landing{
     height: 85vh;  
-    background: url('./stories/assets/Landing-image.jpg');
+    background: url('../stories/assets/Landing-image.jpg');
     background-size: cover;
     display: flex;
     align-items: center;

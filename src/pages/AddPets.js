@@ -16,6 +16,7 @@ import Box from '@mui/material/Box';
 import Checkbox from '@mui/material/Checkbox';
 
 
+
  function PetsCheckBox() {
    
    const properties =['house trained','declawed','shots_current','spayed_neutered','special_needs']
@@ -168,3 +169,4 @@ return(
 
 );
 }
+

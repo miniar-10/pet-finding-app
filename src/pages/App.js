@@ -1,17 +1,17 @@
 import React,{useState, useEffect}  from 'react';
 import {BrowserRouter  ,Routes ,Route,Link}from 'react-router-dom'
 import HomePage from './Home'
-import Pets from './Pets';
+import Pets from '../components/Pets';
 import './App.css';
-import AddPet from './AddPets';
-import logo from './stories/assets/logo.png'
-import facebook from './stories/assets/facebook-icon.png'
-import twitter from './stories/assets/linkedin-icon.png'
-import linkedin from './stories/assets/twitter-icon.png'
-import About from './About';
-import QuizStart from './QuizStart';
-import Question from './Question';
-import Footer from './Footer';
+import AddPet from '../pages/AddPets';
+import logo from '../stories/assets/logo.png'
+import facebook from '../stories/assets/facebook-icon.png'
+import twitter from '../stories/assets/linkedin-icon.png'
+import linkedin from '../stories/assets/twitter-icon.png'
+import About from '../components/About';
+import QuizStart from '../components/QuizStart';
+import Question from '../components/Question';
+import Footer from '../components/Footer';
 
 /*
 To get a token from Petfinder api:

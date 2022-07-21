@@ -1,8 +1,8 @@
-import Pets from './Pets'
+import Pets from '../components/Pets'
 
 
 import  './Home.css'
-import About from './About';
+import About from '../components/About';
 
 function SearchBar  () {
     return(

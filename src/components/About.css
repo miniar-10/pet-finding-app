@@ -12,7 +12,7 @@
 .about-div-image{
     width: 30vw;
     height: 500px;
-    background-image: url('./stories/assets/abt-us.jpg');
+    background-image: url('../stories/assets/abt-us.jpg');
     background-size: contain;
     top:-35px;
 }

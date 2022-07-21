@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import quizData from './quiz.json';
+import quizData from '../data/quiz.json';
 import Question from './Question';
 import QuizResult from './QuizResult';
 import './Pets.css'

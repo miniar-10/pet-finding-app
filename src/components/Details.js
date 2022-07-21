@@ -1,8 +1,8 @@
 import React,{useState} from "react";
-import phone from './stories/assets/phone-icon.png'
-import mail from './stories/assets/mail-icon.png'
-import seeMoreIcon from './stories/assets/more.png'
-import seeLessIcon from './stories/assets/less.png'
+import phone from '../stories/assets/phone-icon.png'
+import mail from '../stories/assets/mail-icon.png'
+import seeMoreIcon from '../stories/assets/more.png'
+import seeLessIcon from '../stories/assets/less.png'
 
 import './Details.css'
 

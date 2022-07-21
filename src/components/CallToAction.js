@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import QuizStart from './QuizStart';
 import Modal from '@mui/material/Modal';
 import Details from './Details';
-import quizData from './quiz.json';
+import quizData from '../quiz.json';
 export default function Btn(props){
     let interval
     console.log(quizData)
